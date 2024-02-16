@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Fidel-Tournament-2024/static/css/main.0821fd3f.css",
+    "main.js": "/Fidel-Tournament-2024/static/js/main.48314ea5.js",
+    "static/js/453.ad6eb26e.chunk.js": "/Fidel-Tournament-2024/static/js/453.ad6eb26e.chunk.js",
+    "index.html": "/Fidel-Tournament-2024/index.html",
+    "main.0821fd3f.css.map": "/Fidel-Tournament-2024/static/css/main.0821fd3f.css.map",
+    "main.48314ea5.js.map": "/Fidel-Tournament-2024/static/js/main.48314ea5.js.map",
+    "453.ad6eb26e.chunk.js.map": "/Fidel-Tournament-2024/static/js/453.ad6eb26e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0821fd3f.css",
+    "static/js/main.48314ea5.js"
+  ]
+}
