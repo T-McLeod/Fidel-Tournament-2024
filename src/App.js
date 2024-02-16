@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import axios from 'axios';
 import './App.css';
 
 function Bracket({ numTeams }) {
@@ -56,6 +57,24 @@ function Bracket({ numTeams }) {
     };
   };
 
+  const handleSubmit = () => {
+    const bracketData = {
+      teams,
+      winners,
+      champion
+    };
+
+    axios.post('/submit-bracket', bracketData)
+      .then(response => {
+        console.log(response.data);
+        alert('Bracket submitted successfully!');
+      })
+      .catch(error => {
+        console.error('Error submitting bracket:', error);
+        alert('Failed to submit bracket. Please try again later.');
+      });
+  };
+
   const resetBracket = () => {
     setChampion('');
     setMatchups(initializeMatchups());
@@ -79,7 +98,7 @@ function Bracket({ numTeams }) {
       <div className="champion">
         {champion ? `Champion: ${champion}` : 'Click to determine champion'}
       </div>
-      <button onClick={resetBracket}>Reset Bracket</button>
+      <button onClick={handleSubmit}>Submit Bracket</button>
     </div>
   );
 }
